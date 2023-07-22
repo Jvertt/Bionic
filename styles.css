@@ -1,7 +1,17 @@
-/* Add your custom bionic text styles here */
-.bionic-text {
-    font-family: "Arial", sans-serif; /* Replace with your desired font */
-    color: black; /* Replace with your desired color */
-    /* Convert the text to uppercase */
-    /* Add more custom styles for the bionic effect */
+/* styles.css */
+@font-face {
+    font-family: "Focus-sans";
+    src: url("path/to/focus-sans.ttf"); /* Replace "path/to/focus-sans.ttf" with the actual path to the font file. */
+    /* You may need to specify additional formats for cross-browser compatibility, such as woff or woff2 */
   }
+  
+  .bionic-text span {
+    display: inline;
+    font-family: "Focus-sans", sans-serif;
+  }
+  
+  /* Optional: If you want the entire webpage to have the same font */
+  body {
+    font-family: "Focus-sans", sans-serif;
+  }
+  

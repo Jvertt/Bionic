@@ -8,7 +8,7 @@ function applyBionicEffectToTextNode(textNode) {
   
       for (let i = 0; i < word.length; i++) {
         // Wrap the first three letters of each word in <span> tags with the 'bold' style.
-        const bionicLetter = i < 3 ? `<span style="font-weight: bold;">${word[i]}</span>` : `<span>${word[i]}</span>`;
+        const bionicLetter = i < 3 ? `<span style="font-weight: bold; font-family: inherit;">${word[i]}</span>` : `<span>${word[i]}</span>`;
         bionicWord += bionicLetter;
       }
   
@@ -45,3 +45,4 @@ function applyBionicEffectToTextNode(textNode) {
   
   // Execute the function when the content script is loaded.
   addBionicTextStyle();
+  
