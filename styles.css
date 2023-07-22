@@ -1,0 +1,8 @@
+/* Add your custom bionic text styles here */
+.bionic-text {
+    font-family: "Arial", sans-serif; /* Replace with your desired font */
+    color: #00ff00; /* Replace with your desired color */
+    text-transform: uppercase; /* Convert the text to uppercase */
+    /* Add more custom styles for the bionic effect */
+  }
+  

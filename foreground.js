@@ -1,7 +1,12 @@
-// This script gets injected into any opened page
-// whose URL matches the pattern defined in the manifest
-// (see "content_script" key).
-// Several foreground scripts can be declared
-// and injected into the same or different pages.
-
-console.log("This prints to the console of the page (injected only if the page url matched)")
+// This function adds a CSS class to elements containing the text.
+function addBionicTextStyle() {
+    const elements = document.querySelectorAll('*');
+    for (const element of elements) {
+      const text = element.textContent.trim();
+      element.classList.add('bionic-text'); // Add the CSS class 'bionic-text'.
+    }
+  }
+  
+  // Execute the function when the content script is loaded.
+  addBionicTextStyle();
+  

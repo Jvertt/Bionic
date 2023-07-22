@@ -1,9 +1,8 @@
 {
-    // Comments are accepted in the manifest, even though it is JSON.
     "manifest_version": 3,
-    "name": "Chrome Extension v3 Starter",
-    "description": "A minimal example of a chrome extension using manifest v3",
-    "version": "0.0.1",
+    "name": "Bionic Text Chrome Extension",
+    "description": "A Chrome extension that turns text on websites into bionic text.",
+    "version": "0.1",
     "icons": {
         "16": "logo/logo-16.png",
         "48": "logo/logo-48.png",
@@ -11,18 +10,30 @@
     },
     "options_page": "settings/settings.html",
     "action": {
-        "default_title": "Chrome Addon v3 Starter",
+        "default_title": "Bionic Text Extension",
         "default_popup": "popup/popup.html"
     },
-    "permissions": [],
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
     "host_permissions": [
         "*://*/*"
     ],
     "background": {
         "service_worker": "service-worker.js"
     },
-    "content_scripts": [{
-        "js": ["foreground.js"],
-        "matches": ["https://github.com/*"]
-    }]
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "foreground.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ]
 }
