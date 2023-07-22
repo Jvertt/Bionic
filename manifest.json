@@ -4,36 +4,29 @@
     "description": "A Chrome extension that turns text on websites into bionic text.",
     "version": "0.1",
     "icons": {
-        "16": "logo/logo-16.png",
-        "48": "logo/logo-48.png",
-        "128": "logo/logo-128.png"
+      "16": "logo/logo-16.png",
+      "48": "logo/logo-48.png",
+      "128": "logo/logo-128.png"
     },
     "options_page": "settings/settings.html",
     "action": {
-        "default_title": "Bionic Text Extension",
-        "default_popup": "popup/popup.html"
+      "default_title": "Bionic Text Extension",
+      "default_popup": "popup/popup.html"
     },
     "permissions": [
-        "activeTab",
-        "scripting"
+      "activeTab",
+      "scripting"
     ],
     "host_permissions": [
-        "*://*/*"
+      "*://*/*"
     ],
     "background": {
-        "service_worker": "service-worker.js"
+      "service_worker": "service-worker.js"
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "<all_urls>"
-            ],
-            "js": [
-                "foreground.js"
-            ],
-            "css": [
-                "styles.css"
-            ]
-        }
-    ]
-}
+    "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["foreground.js"],
+      "css": ["styles.css"]
+    }]
+  }
+  
