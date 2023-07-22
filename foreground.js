@@ -45,4 +45,3 @@ function applyBionicEffectToTextNode(textNode) {
   
   // Execute the function when the content script is loaded.
   addBionicTextStyle();
-  
