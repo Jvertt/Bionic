@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="popup.css">
-    <title>Chrome Addon v3: popup</title>
+    <title>Bionic Text Extension</title>
 </head>
 <body>
-    <div class="toggle-btn-container">
-        <label for="toggle" class="toggle-btn">
-            <input type="checkbox" id="toggle">
-            <span class="toggle-circle"></span>
-        </label>
+    <div class="container">
+        <h1>Bionic</h1>
+        <div class="switch-btn-container">
+            <label for="switch" class="switch-btn">
+                <input type="checkbox" id="switch">
+                <span class="switch-slider"></span>
+                <span class="switch-label">OFF</span>
+            </label>
+        </div>
+        <p>Hit the button to start!</p>
     </div>
-    <p>This is the <span class="special-text">HTML</span> body of the addon.</p>
+    <script src="foreground.js"></script>
 </body>
 </html>

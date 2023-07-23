@@ -1,62 +1,78 @@
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin: 0;
-    padding: 10px;
-  }
-  
-  .special-text {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.special-text {
     color: #007bff; /* Blue color for the special text */
-  }
-  
-  /* Styling for the toggle button */
-  .toggle-btn-container {
+}
+
+/* Styling for the switch button */
+.switch-btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .toggle-btn {
+    margin-bottom: 20px;
+}
+
+.switch-btn {
     position: relative;
     display: inline-block;
-    width: 60px;
+    width: 100px; /* Increased width to accommodate the label */
     height: 34px;
-    background-color: #ccc;
-    border-radius: 34px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  .toggle-btn .toggle-circle {
+}
+
+.switch-slider {
     content: "";
     position: absolute;
     top: 2px;
     left: 2px;
-    width: 30px;
+    width: 60px; /* Decreased width to fit the label inside */
     height: 30px;
-    background-color: #fff;
-    border-radius: 50%;
-    transition: all 0.3s;
-  }
-  
-  /* Styling for the toggle state: ON */
-  .toggle-btn.on {
+    background-color: #ccc;
+    border-radius: 34px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.switch-label {
+    position: absolute;
+    top: 2px;
+    left: 10px; /* Adjust the left position to center the label */
+    width: 50px; /* Set the width to match the width of the slider */
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+    transition: opacity 0.3s;
+}
+
+/* Styling for the switch state: ON */
+.switch-btn input[type="checkbox"]:checked + .switch-slider {
     background-color: #007bff;
-  }
-  
-  .toggle-btn.on .toggle-circle {
-    left: calc(100% - 32px);
-    transform: translateX(-100%);
-  }
-  
-  /* Styling for the toggle state: OFF */
-  .toggle-btn.off .toggle-circle {
-    left: 2px;
-    transform: translateX(0%);
-  }
-  
-  /* Hide the default checkbox */
-  input[type="checkbox"] {
+    transform: translateX(38px); /* Adjusted for the new width of the slider */
+}
+
+.switch-btn input[type="checkbox"]:checked + .switch-slider + .switch-label {
+    opacity: 0;
+}
+
+.switch-btn input[type="checkbox"]:not(:checked) + .switch-label {
+    opacity: 0;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
     display: none;
-  }
-  
+}
