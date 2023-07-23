@@ -1,12 +1,3 @@
-<div align="center">
-    <img src="https://raw.githubusercontent.com/SimGus/chrome-addon-v3-starter/master/logo/logo-128.png"/>
-    <h1>Chrome Extension v3 Starter</h1>
-    <h3>A minimal template of a Chrome v3 addon</h3>
-</div>
-
-
-
-
 ## OverView
 - The Bionic Text Chrome Extension is a unique text modification tool that enhances reading speed and comprehension by applying a special bionic effect to text content on web pages. This effect highlights the first few letters of each word, acting as visual cues to guide the reader's eyes and prompt the brain to fill in the missing information. This README provides an overview of the extension's functionality, installation instructions, and usage guidelines.
 
