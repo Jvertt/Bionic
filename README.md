@@ -31,5 +31,9 @@ Once loaded, the extension will be active on all web pages.
 
 - The Bionic Text Chrome Extension is provided as-is without any warranties or guarantees. While it aims to improve reading speed and comprehension for some users, the effectiveness of the bionic text approach may vary from person to person. Additionally, the extension modifies the appearance of web content, and some websites may not display correctly with the applied bionic effect.
 
+## Resources
+
+[Template](https://github.com/SimGus/chrome-extension-v3-starter)
+
 
 
